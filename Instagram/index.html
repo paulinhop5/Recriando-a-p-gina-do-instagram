@@ -1,0 +1,49 @@
+<!-- Projeto apresentado durante o desafio 1, com o objetivo de recriar a página inicial do instagram. 
+foi utilizado o conceito de  FLEXBOX para montar os blocos de conteúdo. Utilizado para criação: HTML e 
+para o estilo: CSS. -->
+ 
+<DOCTYPE html> 
+ <html lang="en">     
+    <head>
+        <META charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <link rel="stylesheet" href="codgs/style.css"> <!--Tras o estilo css para o programa-->
+        <title>Instagram</title>
+    </head>
+    <body>
+        <div class="instagram-tela"> <!--Cria o bloco responsável por dimensionar o tamanho da aplicação-->
+            <div class="instagram-phone"> <!--Bloco para inserir a imagem do celular-->
+                <img src="./img/Instagram-celular.png" alt="celular">
+            </div>
+            <div class="instagram-continue"> <!--Bloco usado para a criação dos itens de login/foto/donwload-->
+                <div class="group"> <!--Cria primeiro bloco com a foto de perfil, logo instagram e login-->
+                    <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram-logo">
+                    <img src="./img/photo-perfil.jpg" class="profile-photo" alt="foto de perfil"> 
+                    <a href="#" class="instagram-login">continue como Paulo Otavio</a>
+                    <a href="#" class="instagram-logout">Remover Conta</a>
+                </div>
+                <div class="group"> <!--Cria segundo bloco "alterar conta"-->
+                   <p class="not-account">Não é Paulo Otavio</p> 
+                   <p class="not-account">        
+                        <span class="link-blue">Alterar contas</span> 
+                        ou  
+                        <span class="link-blue">Inscreva-se</span>
+                   </p>
+                </div>
+                <div class="baixe-app">
+                    <div class="text-baixe">
+                        <p><b>Baixe o aplicativo</b></p>
+                    </div>
+                    <div class="app-download"> <!--Cria terceiro bloco "downloads"-->
+                      <a href="https://apps.apple.com/br/app/instagram/id389801252" target="_blank">  <!--Link para app store-->
+                            <img src="./img/apple-store.png" class="app-download" alt="apple store app"> 
+                      </a> 
+                      <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US" target="_blank"> <!--Link para google play-->
+                            <img src="./img/google-play.png" class="app-download" alt="google play store">  
+                      </a>
+                    </div> 
+                </div>
+            </div>
+        </div>     
+    </body> 
+</html>
